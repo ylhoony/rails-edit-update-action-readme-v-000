@@ -556,3 +556,29 @@ Processing by PostsController#edit as HTML
   [1m[36mPost Load (0.1ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1[0m  [["id", 1]]
   Rendered posts/edit.html.erb within layouts/application (0.6ms)
 Completed 200 OK in 27ms (Views: 18.9ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 38.142.1.26 at 2018-01-23 20:05:24 +0000
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 38.142.1.26 at 2018-01-23 20:05:24 +0000
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 38.142.1.26 at 2018-01-23 20:05:24 +0000
+
+
+Started GET "/assets/turbolinks.self-2db6ec539b9190f75e1d477b305df53d12904d5cafdd47c7ffd91ba25cbec128.js?body=1" for 38.142.1.26 at 2018-01-23 20:05:24 +0000
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 38.142.1.26 at 2018-01-23 20:05:24 +0000
+
+
+Started PUT "/posts/1" for 38.142.1.26 at 2018-01-23 20:05:47 +0000
+Processing by PostsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"XU+dono6JJ+DwhzId2VM0ty12EO57/6Zxx3NEI65d8Zgne7x9kBTC7CPxQoG0HmtWTaz4WAnZToo+GVyMIbLcA==", "title"=>"Post Title!!! updated", "description"=>"This is description!!!", "commit"=>"Submit Post", "id"=>"1"}
+  [1m[35mPost Load (0.2ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.7ms)[0m  UPDATE "posts" SET "title" = ?, "description" = ?, "updated_at" = ? WHERE "posts"."id" = ?  [["title", "Post Title!!! updated"], ["description", "This is description!!!"], ["updated_at", "2018-01-23 20:05:47.653810"], ["id", 1]]
+  [1m[36m (4.9ms)[0m  [1mcommit transaction[0m
+Redirected to http://67.205.130.239:36298/posts/1
+Completed 302 Found in 15ms (ActiveRecord: 5.9ms)
