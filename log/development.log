@@ -533,3 +533,14 @@ Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6
 
 
 Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 38.142.1.26 at 2018-01-23 20:00:46 +0000
+
+
+Started PUT "/posts/1" for 38.142.1.26 at 2018-01-23 20:02:38 +0000
+Processing by PostsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"U0n1e9ymrb+MXlkTB4a/9suN3k5LYbIrkdc/+pWek2Zum4YoUNzaK78TgNF2M4qJTg617JKpKYh+MpeYK6Ev0A==", "title"=>"Rails Introduction Quiz", "description"=>"fnwwjnewjfnwelkfnwe fwenfjwne", "commit"=>"Submit Post", "id"=>"1"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+RuntimeError ({"utf8"=>"✓", "_method"=>"put", "authenticity_token"=>"U0n1e9ymrb+MXlkTB4a/9suN3k5LYbIrkdc/+pWek2Zum4YoUNzaK78TgNF2M4qJTg617JKpKYh+MpeYK6Ev0A==", "title"=>"Rails Introduction Quiz", "description"=>"fnwwjnewjfnwelkfnwe fwenfjwne", "commit"=>"Submit Post", "controller"=>"posts", "action"=>"update", "id"=>"1"}):
+  app/controllers/posts_controller.rb:27:in `update'
+
+
